@@ -67,7 +67,8 @@ Default root object: index.html.
 Cache behaviour / TTLs: left at defaults (no custom cache policy, no compression
 changes, no custom error pages configured).
 
-[Screenshot showing CloudFrontwith OAC attached
-](screenshots/cloudfront_oac.png)
+[Scrrenshot showing default root object](screenshots/cloudfront_default_object.png)
+
+[Screenshot showing CloudFrontwith OAC attached](screenshots/cloudfront_oac.png)
 
 [Screenshot showing CloudFront Behaviour](screenshots/cloudfront_behaviour.png)
