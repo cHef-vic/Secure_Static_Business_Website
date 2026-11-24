@@ -1,6 +1,6 @@
 # Secure_Static_Business_Website
 
-Project Overview
+## 1. Project Overview
 
 The goal of this project was to design and deploy a professional static business website using AWS, hosting the site in Amazon S3 and delivering it globally through Amazon CloudFront with the deployment following AWS security best practices so that the S3 bucket remains private while visitors access content through CloudFront over HTTPS.
 
@@ -12,4 +12,9 @@ Stack: Amazon S3 (private origin) → CloudFront OAC (SigV4) → CloudFront CDN 
 
 Cost: Deployed entirely within the AWS Free Tier
 
-Live URL: d2273fpwmvxbi.cloudfront.net
+Live URL: https://d2273fpwmvxbi.cloudfront.net
+
+## 2. Architecture
+[Architecture Diagram](images/architecture-diagram.png)
+
+Design principle: the S3 bucket is never reachable from the internet. CloudFront signs every request it sends to S3, and the bucket policy is written to trust only that one distribution. This keeps the origin private while still delivering content from edge locations closest to the visitor.
