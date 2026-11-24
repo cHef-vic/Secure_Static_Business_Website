@@ -12,4 +12,4 @@ Stack: Amazon S3 (private origin) → CloudFront OAC (SigV4) → CloudFront CDN 
 
 Cost: Deployed entirely within the AWS Free Tier
 
-Live URL: [website](d2273fpwmvxbi.cloudfront.net)
+Live URL: d2273fpwmvxbi.cloudfront.net
